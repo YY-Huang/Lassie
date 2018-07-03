@@ -17,6 +17,9 @@ const createLFQs = require('./lassie-createLambda');
 //Lamda Delete Function
 const deleteLambda = require('./lassie-deleteLambda');
 
+//DB related questions
+const dbQ = require('./lassie-createDb'); 
+
 
 console.log(chalk.cyanBright(figlet.textSync('Lassie', {
   font: 'Train',
@@ -91,6 +94,17 @@ program
     //return listLambda;
   })
 
-
+program
+  .command('createDb')
+  .description('Creates a database for our metrics to write into')
+  .option('--global', 'creates a global table')
+  .action(() => {
+    prompt(dbQ.createDBQ).then((answer) => {
+      return aws.createDB(answer);
+    })
+  })
+  .on('--global', () => {
+    
+  })
 
 program.parse(process.argv);

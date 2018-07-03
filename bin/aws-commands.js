@@ -50,9 +50,7 @@ aws.configUser = ((inputs) => {
         exec(awsConfigureUserKey)
         exec(awsConfigureDefaultRegion)
 
-        //let verifyConfig = () => {aws.listUsers()};
         return aws.listUsers();
-        //return;
     }
     else {
     console.log(chalk.red('Required inputs needed for creating a profile!'));
@@ -101,6 +99,19 @@ aws.deleteLambda = ((input) => {
     const awsDelete = `aws lambda delete-function --function-name ${input.lambdaName}`;
 
     return exec(awsDelete, execCallback);
+})
+
+aws.createDB = ((input) => {
+    const awsDB = `aws dynamodb create-table \
+    --table-name ${input.tableName} \
+    --attribute-definitions \
+        AttributeName=Id,AttributeType=N \
+    --key-schema \
+        AttributeName=Id,KeyType=HASH \
+    --provisioned-throughput \
+        ReadCapacityUnits=5,WriteCapacityUnits=5`;
+
+    return exec(awsDB, execCallback);
 })
 
 module.exports = ('aws', aws);
