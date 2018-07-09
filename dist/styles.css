@@ -1,0 +1,261 @@
+.top {
+  position:absolute;
+  left:0; 
+  right:0;
+  height: 67px;
+}
+
+.titleDiv {
+  position:absolute; 
+  left:0; 
+  width: 178px;
+  height: 67px;
+}
+
+.title {
+ margin: inline-block;
+ position: relative; 
+ left: 40px;
+}
+
+.remainingTop {
+  position: absolute;
+  height: 67px; 
+  left: 178px;
+  right: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.stats {
+  width: 200px;
+  height: 50px;
+  margin-top: 25px;
+}
+
+.left {
+  position: absolute;
+  left:0; 
+  top: 72px; 
+  bottom: 0;
+  width: 178px;
+}
+
+#menu {
+  position: absolute;
+  left: 45px;
+  width: 110px;
+  /* reset style */
+  visibility: visible;
+  opacity: 1;
+  color: '#FFFFFF';
+}
+
+
+.cd-main-content .content-wrapper { 
+margin-left: 110px; 
+} 
+
+
+.main {
+  position: absolute;
+  left:178px; 
+  top:92px; 
+  right:0; 
+  bottom:0;
+  background-color: lightgray;
+}
+
+.recents {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 475px;
+  background-color: white;
+}
+
+.invocations {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  right: 230px;
+  bottom: 270px;
+  background-color: white;
+}
+
+.durations {
+  position: absolute;
+  top: 360px;
+  left: 20px;
+  right: 230px;
+  bottom: 20px;
+  background-color: white;
+}
+
+.bestWorst {
+
+}
+
+.best {
+  background-color: white;
+  position: absolute;
+  top: 150px;
+  left: 800px;
+  right: 20px;
+  bottom: 270px;  
+}
+
+.worst {
+  background-color: white;
+  position: absolute;
+  top: 360px;
+  left: 800px;
+  right: 20px;
+  bottom: 20px; 
+}
+
+#index {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, serif;
+}
+
+/* Function Page Styling */
+
+#estWatt {
+  color: red;
+  width: 15em;
+  height: 5em;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  /* padding: 8px 12px; */
+  text-align: center;
+  background: linear-gradient(to right, #70e1f5, #ffd194);
+  margin-right: 60px;
+  /* margin-left: 10px; */
+}
+
+#coldStarts {
+  color: yellow;
+  width: 15em;
+  height: 5em;
+  text-align: center;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  /* padding: 8px 12px; */
+  background-image: linear-gradient(to right,#c9ffbf, #ffafbd);
+  margin-right: 60px;
+  margin-left: 40px;
+}
+
+#memVScpu {
+  color: green;
+  width: 15em;
+  height: 5em;
+  text-align: center;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  /* padding: 8px 12px; */
+  background-image: linear-gradient(to right,#ff6e7f, #bfe9ff);
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  /* margin-right: 200px; */
+  margin-left: 40px;
+}
+
+.topMetrics {
+  text-align: center;
+  /* display: inline-block;
+  margin-right: auto;
+  margin-left: auto; */
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* -------------------------------------------- Center CSS -------------------------------------------- */
+
+
+#invocations {
+  color: green;
+  width: 20em;
+  height: 20em;
+  text-align: center;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  /* padding: 8px 12px; */
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  /* margin-right: 200px; */
+  /* margin-left: 40px; */
+}
+
+#duration {
+  color: green;
+  width: 20em;
+  height: 20em;
+  text-align: center;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  /* padding: 8px 12px; */
+  background: linear-gradient(to right,#ddd6f3, #faaca8);
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  /* margin-right: 200px; */
+  margin-left: 40px;
+}
+
+.centerMetrics1 {
+  text-align: center;
+  /* display: inline-block;
+  margin-right: auto;
+  margin-left: auto; */
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+#memory {
+  color: green;
+  width: 20em;
+  height: 20em;
+  text-align: center;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  /* padding: 8px 12px; */
+  background: linear-gradient(to right,#2bc0e4, #eaecc6);
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  /* margin-right: 200px; */
+  /* margin-left: 40px; */
+}
+
+#CPU {
+  color: green;
+  width: 20em;
+  height: 20em;
+  text-align: center;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  /* padding: 8px 12px; */
+  background: linear-gradient(to right,#1fa2ff, #12d8fa, #a6ffcb);
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  /* margin-right: 200px; */
+  margin-left: 40px;
+}
+
+.centerMetrics2 {
+  text-align: center;
+  /* display: inline-block;
+  margin-right: auto;
+  margin-left: auto; */
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+html, body { margin: 0; padding: 0; }

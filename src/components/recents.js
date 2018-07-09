@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './styles.css';
+// import styles from './styles.css';
 
 class Recents extends React.Component {
   render() {
@@ -7,7 +7,7 @@ class Recents extends React.Component {
       <div class="recents">
         <h5>Recents</h5>
         <ul>
-          <li> Func1 </li>
+          <li> Func1 </li> 
           <li> Func2 </li>
           <li> Func3 </li>
         </ul>  
